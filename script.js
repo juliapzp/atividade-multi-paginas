@@ -1,5 +1,5 @@
 function converte(){
-    var temperaturainicial = document.getElementById("campo").value
+    var temperaturainicial = Number(document.getElementById("campo").value)
     var resultado = 0
     if(document.getElementById("cf").checked){
         resultado = (temperaturainicial * 1.8) + 32
@@ -8,10 +8,10 @@ function converte(){
         resultado = (temperaturainicial - 32) * 5/9
     }
     else if(document.getElementById("ck").checked){
-        resultado = Number(temperaturainicial + 273.15)
+        resultado = (temperaturainicial + 273.15)
     }
     else if(document.getElementById("kc").checked){
-        resultado = Number(temperaturainicial - 273)
+        resultado = (temperaturainicial - 273.15)
     }
     else if(document.getElementById("fk").checked){
         resultado = ((temperaturainicial - 32) * 5/9) + 273.15
