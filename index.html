@@ -49,16 +49,36 @@
 </head>
 <body>
     <h1>Atividade Multi Páginas</h1>   
-    <a href="temperaturas.html">Conversões</a><br><br>
-    <button onclick="novaPagina()">Nova Página</button><br>
-    <button onclick="novaGuia()">Nova Guia</button><br>
+    <a href="temperaturas.html">Temperaturas</a><br><br>
+    <button onclick="novaPaginaT()">Nova Página</button><br>
+    <button onclick="novaGuiaT()">Nova Guia</button><br>
+
+    <a href="sobremim.html">Sobre Mim</a><br><br>
+    <button onclick="novaPaginaS()">Nova Página</button><br>
+    <button onclick="novaGuiaS()">Nova Guia</button><br>
+
+    <a href="interesses.html">Interesses</a><br><br>
+    <button onclick="novaPaginaI()">Nova Página</button><br>
+    <button onclick="novaGuiaI()">Nova Guia</button><br>
 </body>
 </html>
 <script>
-    function novaPagina(){
+    function novaPaginaT(){
         window.location.href="temperaturas.html"
     }
-    function novaGuia(){
+    function novaGuiaT(){
         window.open("temperaturas.html")
+    }
+    function novaPaginaS(){
+        window.location.href="sobremim.html"
+    }
+    function novaGuiaS(){
+        window.open("sobremim.html")
+    }
+    function novaPaginaI(){
+        window.location.href="interesses.html"
+    }
+    function novaGuiaI(){
+        window.open("interesses.html")
     }
 </script>
