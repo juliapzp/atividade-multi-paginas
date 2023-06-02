@@ -17,9 +17,17 @@
             color: #000000;
         }
         
-        a {
+        .section {
             display: inline-block;
-            margin: 10px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        
+        a {
+            display: block;
+            margin-top: 10px;
             padding: 10px 20px;
             background-color: #c615da;
             color: white;
@@ -42,26 +50,39 @@
         button:hover {
             background-color: #838383;
         }
+        
         a:hover {
             background-color: #9f10ae;
         }
     </style>
 </head>
 <body>
-    <h1>Atividade Multi Páginas</h1>   
-    <a href="temperaturas.html">Temperaturas</a><br><br>
-    <button onclick="novaPaginaT()">Nova Página</button><br>
-    <button onclick="novaGuiaT()">Nova Guia</button><br>
+    <h1>Atividade Multi Páginas</h1> 
 
-    <a href="sobremim.html">Sobre Mim</a><br><br>
-    <button onclick="novaPaginaS()">Nova Página</button><br>
-    <button onclick="novaGuiaS()">Nova Guia</button><br>
+    <div class="section">
+        <h2>Temperaturas</h2>
+        <a href="temperaturas.html">Abrir</a><br><br>
+        <button onclick="novaPaginaT()">Nova Página</button><br>
+        <button onclick="novaGuiaT()">Nova Guia</button><br>
+    </div>
 
-    <a href="interesses.html">Interesses</a><br><br>
-    <button onclick="novaPaginaI()">Nova Página</button><br>
-    <button onclick="novaGuiaI()">Nova Guia</button><br>
+    <div class="section">
+        <h2>Sobre Mim</h2>
+        <a href="sobremim.html">Abrir</a><br><br>
+        <button onclick="novaPaginaS()">Nova Página</button><br>
+        <button onclick="novaGuiaS()">Nova Guia</button><br>
+    </div>
+
+    <div class="section">
+        <h2>Interesses</h2>
+        <a href="interesses.html">Abrir</a><br><br>
+        <button onclick="novaPaginaI()">Nova Página</button><br>
+        <button onclick="novaGuiaI()">Nova Guia</button><br>
+    </div>
+
 </body>
 </html>
+
 <script>
     function novaPaginaT(){
         window.location.href="temperaturas.html"
