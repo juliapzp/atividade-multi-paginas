@@ -21,7 +21,7 @@ function converte(){
     }
     else{
         resultado = "Por favor, selecione uma opção!"
+        alert(resultado)
     }
-
     document.getElementById("resultado").innerHTML = resultado
 }
