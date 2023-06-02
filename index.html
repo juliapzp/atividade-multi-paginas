@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #c615da;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #a4a4a4;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #838383;
+        }
+        a:hover {
+            background-color: #9f10ae;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividade Multi Páginas</h1>   
+    <a href="temperaturas.html">Conversões</a><br><br>
+    <button onclick="novaPagina()">Nova Página</button><br>
+    <button onclick="novaGuia()">Nova Guia</button><br>
+</body>
+</html>
+<script>
+    function novaPagina(){
+        window.location.href="temperaturas.html"
+    }
+    function novaGuia(){
+        window.open("temperaturas.html")
+    }
+</script>
