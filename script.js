@@ -2,7 +2,7 @@ function converte(){
     var temperaturainicial = Number(document.getElementById("campo").value)
     var resultado = 0
     if(document.getElementById("cf").checked){
-        resultado = (temperaturainicial * 1.8) + 32
+        resultado = (temperaturainicial * 9/5) + 32
     }
     else if(document.getElementById("fc").checked){
         resultado = (temperaturainicial - 32) * 5/9
@@ -18,6 +18,9 @@ function converte(){
     }
     else if(document.getElementById("kf").checked){
         resultado = ((temperaturainicial - 273.15) * 9/5) + 32
+    }
+    else{
+        resultado = "Por favor, selecione uma opção!"
     }
 
     document.getElementById("resultado").innerHTML = resultado
